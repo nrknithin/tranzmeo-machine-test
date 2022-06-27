@@ -20,7 +20,7 @@ const setUpConfig = isAuthenticated => {
       headers: {
         'api-header-security': API_HEADER_KEY,
         'Content-Type': 'application/json',
-        'x-access-token': accessToken,
+        Authorization: accessToken,
       },
     };
     const CONFIG_WITHOUT_AUTHORIZATION = {
